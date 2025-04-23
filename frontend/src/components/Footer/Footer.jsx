@@ -34,11 +34,11 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/products">Products</a></li>
+            <li><a href="/aboutus">About</a></li>
+            <li><a href="/shop">Products</a></li>
             <li><a href="/events">Events</a></li>
-            <li><a href="/course">Courses</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contactus">Contact</a></li>
           </ul>
         </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
           </p>
           <p>
             <FaPhoneAlt className="contact-icon" />
-            Phone: <a href="tel:+911234567890">+91 73580 39311</a>
+            Phone: <a href="tel:+917358039311">+91 73580 39311</a>
           </p>
           <p>
             <FaMapMarkerAlt className="contact-icon" />

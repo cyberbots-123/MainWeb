@@ -1,65 +1,87 @@
-import React from 'react';
-import { FaServer, FaLaptopCode, FaCloud, FaCube } from 'react-icons/fa';
-import './About2.css';
+// import React from 'react'
+// import "./About2.css"
+// import { assets } from '../../assets/assets'
+
+// const About2 = () => {
+//   return (
+//     <div className="about2-container">
+//       <h1>
+//       Tamilnadu Centre of excellence for Skilling
+//       </h1>
+
+//       <div className="about2-content">
+//         <div className="about2-text">
+//           <p>Cyberbots is responsible for co-ordination of all Skill Development efforts across the country, removal of disconnect between demand and supply of skilled manpower, building the vocational and technical training framework, skill up-gradation, building of new skills and innovative thinking not only for existing jobs but also jobs that are to be created. cyberbots aims to skill on a large scale with speed and high standards in order to achieve it’s vision of a ‘Skilled India’.</p>
+          
+//         </div>
+//         <img src={assets.Abt2} alt="AI Conference" />
+//       </div>
+//       <div className="about2-extra-section">
+//   <h1>Often imitated, never replicated</h1>
+//   <p>
+//   Welcome to the nation’s original and most trusted youth STEM educator, with 25 years of expertise and 650,000 alumni! No other STEM enrichment program can compete with our relatable, world-class instructors, iconic partners, prestigious campus locations, exclusive content, and courses that truly speak to kids’ interests. We’re trusted by over 1 million parents because we’ve forged an unmatched path to future success. With personalized learning and elite instructors who fuel kids' passions, Cyberbots is the place to invest in your kids’ futures. 
+//   </p>
+// </div>
+
+// <div className="about2-extra-section">
+//   <h1>Humble brag? We bring the best.</h1>
+//   <p>
+//   Real recognizes real. Our prestigious partners know we’ve got the top programs, and our instructors know we’re bringing the best curriculum. That’s how Cyberbots is able to partner with tech industry juggernauts and recruit instructors from the most elite universities. Experience the Cyberbots difference today!  
+//   </p>
+// </div>
+
+
+//     </div>
+//   )
+// }
+
+// export default About2
+
+
+import React, { useEffect } from 'react'
+import "./About2.css"
+import { assets } from '../../assets/assets'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About2 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
+  }, [])
+
   return (
-    <div className="container my-5">
-      <div className="row text-center">
-        {/* Infrastructure Technology Card */}
-        <div className="col-md-3 mb-4">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <FaServer className="icon mb-3" style={{ fontSize: '40px', color: '#007bff' }} />
-              <h5 className="card-title">Infrastructure Technology</h5>
-              <p className="card-text">
-                We offer reliable infrastructure technology solutions that ensure your business operates seamlessly with minimal downtime. Our team optimizes your IT resources for maximum performance and scalability.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="about2-container">
+      <h1 data-aos="fade-up">
+        Tamilnadu Centre of excellence for Skilling
+      </h1>
 
-        {/* IT Consultancy & Solution Card */}
-        <div className="col-md-3 mb-4">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <FaLaptopCode className="icon mb-3" style={{ fontSize: '40px', color: '#007bff' }} />
-              <h5 className="card-title">IT Consultancy & Solution</h5>
-              <p className="card-text">
-                Our consultancy services help you navigate the complex world of IT. We provide tailored solutions to help you streamline processes, reduce costs, and stay ahead of the competition with the latest technology trends.
-              </p>
-            </div>
-          </div>
+      <div className="about2-content" data-aos="fade-right">
+        <div className="about2-text">
+          <p>
+            Cyberbots is responsible for co-ordination of all Skill Development efforts across the country, removal of disconnect between demand and supply of skilled manpower, building the vocational and technical training framework, skill up-gradation, building of new skills and innovative thinking not only for existing jobs but also jobs that are to be created. Cyberbots aims to skill on a large scale with speed and high standards in order to achieve its vision of a ‘Skilled India’.
+          </p>
         </div>
+        <img src={assets.Abt2} alt="AI Conference" data-aos="zoom-in" />
+      </div>
 
-        {/* Cloud Managed Services Card */}
-        <div className="col-md-3 mb-4">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <FaCloud className="icon mb-3" style={{ fontSize: '40px', color: '#007bff' }} />
-              <h5 className="card-title">Cloud Managed Services</h5>
-              <p className="card-text">
-                We offer comprehensive cloud-managed services that allow you to harness the power of the cloud. From migration to ongoing management, we ensure your cloud infrastructure is optimized and secure.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="about2-extra-section" data-aos="fade-up">
+        <h1>Often imitated, never replicated</h1>
+        <p>
+          Welcome to the nation’s original and most trusted youth STEM educator, with 25 years of expertise and 650,000 alumni! No other STEM enrichment program can compete with our relatable, world-class instructors, iconic partners, prestigious campus locations, exclusive content, and courses that truly speak to kids’ interests. We’re trusted by over 1 million parents because we’ve forged an unmatched path to future success. With personalized learning and elite instructors who fuel kids' passions, Cyberbots is the place to invest in your kids’ futures. 
+        </p>
+      </div>
 
-        {/* Blockchain Technology Card */}
-        <div className="col-md-3 mb-4">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <FaCube className="icon mb-3" style={{ fontSize: '40px', color: '#007bff' }} />
-              <h5 className="card-title">Blockchain Technology</h5>
-              <p className="card-text">
-                Explore the world of blockchain technology with us. We provide innovative solutions to integrate blockchain into your business operations, enhancing transparency, security, and efficiency.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="about2-extra-section" data-aos="fade-up">
+        <h1>Humble brag? We bring the best.</h1>
+        <p>
+          Real recognizes real. Our prestigious partners know we’ve got the top programs, and our instructors know we’re bringing the best curriculum. That’s how Cyberbots is able to partner with tech industry juggernauts and recruit instructors from the most elite universities. Experience the Cyberbots difference today!  
+        </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About2;
+export default About2

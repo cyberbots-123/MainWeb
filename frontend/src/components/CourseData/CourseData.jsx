@@ -307,7 +307,7 @@ const courseData = {
     demoLink: "#"
   },
 
-  "Python": {
+  "Programming Languages": {
     image: assets.Web_2,
     title: "Programming Languages",
     description:

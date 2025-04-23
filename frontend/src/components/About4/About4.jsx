@@ -1,55 +1,43 @@
-import React from 'react';
-import './About4.css';
+// import React from 'react';
+// import "./About4.css";
+// import { assets } from '../../assets/assets';
+
+// const About4 = () => {
+//   return (
+//     <div className="about4-container">
+//       <div className="about4-content">
+//         <h1>Gamified learning for long-term success</h1>
+//         <p>Experience The Cyberbots Pathway™, our proprietary, gamified learning system! Your child will start at L1 and gain XP (experience points) for each completed on-campus or online course. They'll work hard and play hard to unlock a love of learning and prove mastery, ultimately earning the badge of L10—the marker of pre-collegiate excellence. They’ll receive a personalized letter of recommendation from our CEO, get an exclusive badge for their portfolio and LinkedIn, and attract attention from top universities and future employers.   </p>
+//       </div>
+//       <img src={assets.GroupPic} alt="Think Forum Group" />
+//     </div>
+//   );
+// };
+
+// export default About4;
+
+
+
+import React, { useEffect } from 'react';
+import "./About4.css";
 import { assets } from '../../assets/assets';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About4 = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <div className="container my-5">
-      <h2 className="text-center mb-4">REASON TO CHOOSE US</h2>
-      <p className="text-center mb-5">
-        We provide truly prominent IT solutions.
-      </p>
-
-      <div className="row">
-        {/* Card 1: Information Management System */}
-        <div className="col-md-4 mb-4">
-          <div className="card about-card">
-            <img src={assets.Abt41} className="card-img" alt="Information Management System" />
-            <div className="card-img-overlay d-flex flex-column justify-content-center text-center hover-content">
-              <h5 className="card-title text-white">Information Management System</h5>
-              <p className="card-text text-white">
-                Manage and streamline your information systems to enhance decision-making and operational efficiency.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Card 2: Information Database Security */}
-        <div className="col-md-4 mb-4">
-          <div className="card about-card">
-            <img src={assets.Abt42} className="card-img" alt="Information Database Security" />
-            <div className="card-img-overlay d-flex flex-column justify-content-center text-center hover-content">
-              <h5 className="card-title text-white">Information Database Security</h5>
-              <p className="card-text text-white">
-                Secure your valuable data with advanced protection measures to prevent breaches and unauthorized access.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Card 3: Multifunctional Technology */}
-        <div className="col-md-4 mb-4">
-          <div className="card about-card">
-            <img src={assets.Abt43} className="card-img" alt="Multifunctional Technology" />
-            <div className="card-img-overlay d-flex flex-column justify-content-center text-center hover-content">
-              <h5 className="card-title text-white">Multifunctional Technology</h5>
-              <p className="card-text text-white">
-                Embrace cutting-edge multifunctional technology to meet diverse business needs efficiently.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="about4-container" data-aos="fade-up">
+      <div className="about4-content" data-aos="fade-right">
+        <h1>Gamified learning for long-term success</h1>
+        <p>
+          Experience The Cyberbots Pathway™, our proprietary, gamified learning system! Your child will start at L1 and gain XP (experience points) for each completed on-campus or online course. They'll work hard and play hard to unlock a love of learning and prove mastery, ultimately earning the badge of L10—the marker of pre-collegiate excellence. They’ll receive a personalized letter of recommendation from our CEO, get an exclusive badge for their portfolio and LinkedIn, and attract attention from top universities and future employers.
+        </p>
       </div>
+      <img src={assets.GroupPic} alt="Think Forum Group" data-aos="fade-left" />
     </div>
   );
 };

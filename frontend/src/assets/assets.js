@@ -1,5 +1,5 @@
 import logo from "./logo.png"
-import Home_Banner from "./Home_Banner.png"
+// import Home_Banner from "./Home_Banner.png"
 import Robotics_1 from "./Robotics_1.png"
 import Robotics_2 from "./Robotics_2.png"
 import Robotics_3 from "./Robotics_3.png"
@@ -54,12 +54,12 @@ import Client14 from "./Client14.png"
 import Client15 from "./Client15.png"
 import Client16 from "./Client16.png"
 import home02bg from "./home02bg.jpg"
-import Abt1 from "./Abt1.png"
-import Abt2 from "./Abt2.png"
-import Abt3 from "./Abt3.jpg"
-import Abt41 from "./Abt41.jpg"
-import Abt42 from "./Abt42.jpg"
-import Abt43 from "./Abt43.jpg"
+// import Abt1 from "./Abt1.png"
+// import Abt2 from "./Abt2.png"
+// import Abt3 from "./Abt3.jpg"
+// import Abt41 from "./Abt41.jpg"
+// import Abt42 from "./Abt42.jpg"
+// import Abt43 from "./Abt43.jpg"
 import Courses_bgimage from "./Courses_bgimage.png"
 import Courses3bg from "./Courses3bg.png"
 import course6bg from "./course6bg.png"
@@ -81,6 +81,18 @@ import logo1 from "./logo1.png"
 import Coursevideos from "./Coursevideos.mp4"
 import ElectroVideo from "./ElectroVideo.mp4"
 import SkillVideo from "./SkillVideo.mp4"
+import BDM from "./BDM.jpg"
+import Abt2 from "./Abt2.png"
+import GroupPic from "./GroupPic.png"
+import Monika from "./Monika.jpg"
+import MD from "./MD.jpg"
+import FINANCE from "./FINANCE.jpg"
+import Harish from "./Harish.jpg"
+import Halima from "./Halima.jpg"
+import CAO from "./CAO.jpg"
+import WD from "./WD.jpg"
+import Harini from "./Harini.jpg"
+import abtVid from "./abtVid.mp4"
 
 
 
@@ -88,12 +100,23 @@ import SkillVideo from "./SkillVideo.mp4"
 
 
 export const assets={
+    abtVid,
+    Harini,
+    WD,
+    CAO,
+    Halima,
+    Harish,
+    FINANCE,
+    MD,
+    Monika,
+    GroupPic,
+    Abt2,
+    BDM,
     Coursevideos,
     ElectroVideo,
     SkillVideo,
     logo1,
     logo,
-    Home_Banner,
     Robotics_1,
     Robotics_2,
     Robotics_3,
@@ -148,12 +171,6 @@ export const assets={
     Client15,
     Client16,
     home02bg,
-    Abt1,
-    Abt2,
-    Abt3,
-    Abt41,
-    Abt42,
-    Abt43,
     Courses_bgimage,
     Courses3bg,
     course6bg,

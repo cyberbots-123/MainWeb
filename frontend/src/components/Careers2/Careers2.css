@@ -1,14 +1,12 @@
-.card:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
-  }
-  
-  .card h5 {
-    font-size: 1.25rem;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
+.career-card {
+  background: #fff;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+}

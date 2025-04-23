@@ -70,6 +70,9 @@ const CourseDetails = () => {
           ))}
         </ul>
 
+
+
+
         <h3 className="text-primary" data-aos="fade-up">⭐ Student Testimonials</h3>
         <div className="row">
           {course.testimonials.map((testimonial, index) => (

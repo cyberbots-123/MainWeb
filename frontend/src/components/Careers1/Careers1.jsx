@@ -33,8 +33,8 @@ const Careers1 = () => {
             <br />
             {/* <p className="lead">We Are The People Who Dream & DO</p> */}
             <div>
-              <button className="custom-btn custom-btn-primary me-3">About Us</button>
-              <button className="custom-btn custom-btn-secondary">Vacancies</button>
+              {/* <button className="custom-btn custom-btn-primary me-3">About Us</button> */}
+              {/* <button className="custom-btn custom-btn-secondary">Vacancies</button> */}
             </div>
           </div>
           {/* Image Section */}

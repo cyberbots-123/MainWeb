@@ -34,7 +34,7 @@ const Careers3 = () => {
           data-aos-delay="100"
         >
           <img
-            src={assets.careerbg3}
+            src={assets.BDM}
             alt="Career Background Image"
             className="img-fluid rounded shadow"
           />
